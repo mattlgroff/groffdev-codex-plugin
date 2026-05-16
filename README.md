@@ -113,6 +113,19 @@ Suggested versioning:
 
 README-only changes do not require a version bump unless the documented behavior depends on changed plugin files.
 
+## Codex CLI Packet Defaults
+
+Implementation and review packets should run through fresh Codex CLI instances using GPT-5.5, low reasoning effort, and the fast service tier:
+
+```bash
+codex exec -m gpt-5.5 \
+  -c model_reasoning_effort="low" \
+  -c service_tier="fast" \
+  < "$PACKET_PATH"
+```
+
+The installed Codex CLI exposes `-m, --model <MODEL>` directly. Reasoning effort and fast mode are config overrides, so this plugin passes them with `-c`.
+
 ## Repo-Scoped Sharing
 
 If you want a project repository to advertise this plugin to everyone working in that repo, add a marketplace file to that project at:
