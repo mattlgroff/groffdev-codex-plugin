@@ -75,6 +75,28 @@ codex plugin marketplace add ./.
 
 This also registers a marketplace source for your local Codex installation, but it points at the folder on disk instead of GitHub. It is useful while developing the plugin.
 
+### Marketplace Layout
+
+The repository root is the marketplace source. The installable plugin package lives at:
+
+```text
+plugins/groffdev/
+```
+
+The marketplace manifest at `.agents/plugins/marketplace.json` must point to that non-root plugin directory:
+
+```json
+{
+  "name": "groffdev",
+  "source": {
+    "source": "local",
+    "path": "./plugins/groffdev"
+  }
+}
+```
+
+Do not point the marketplace entry at `"./"` or `"."`. Some Codex builds normalize that to an empty path and reject the marketplace with `local plugin source path must not be empty`.
+
 ## Updating The Plugin
 
 For users who installed the GitHub marketplace, update marketplace sources with:
@@ -103,7 +125,7 @@ Then restart Codex so it reloads the installed plugin copy.
 
 ### Versioning
 
-Increment `.codex-plugin/plugin.json` version when plugin behavior changes, including skill instructions, hooks, bundled apps, or MCP config.
+Increment `plugins/groffdev/.codex-plugin/plugin.json` version when plugin behavior changes, including skill instructions, hooks, bundled apps, or MCP config.
 
 Suggested versioning:
 
