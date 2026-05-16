@@ -1,0 +1,20 @@
+{
+  "name": "groffdev-codex-plugin-marketplace",
+  "interface": {
+    "displayName": "Groffdev Codex Plugins"
+  },
+  "plugins": [
+    {
+      "name": "groffdev-codex-plugin",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

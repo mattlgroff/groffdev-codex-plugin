@@ -1,0 +1,17 @@
+{
+  "description": "Prevents inline heredoc execution with nested Codex CLI packet workflows.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/hooks/block-codex-heredoc.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

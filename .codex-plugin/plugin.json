@@ -1,0 +1,41 @@
+{
+  "name": "groffdev-codex-plugin",
+  "version": "0.1.0",
+  "description": "Groffdev Codex workflow plugin: research, plan, grill, implement, review, address PR comments, and hand off through nested Codex CLI workflows.",
+  "author": {
+    "name": "Matt Groff",
+    "url": "https://github.com/mattlgroff"
+  },
+  "homepage": "https://github.com/mattlgroff/groffdev-codex-plugin",
+  "repository": "https://github.com/mattlgroff/groffdev-codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "research",
+    "planning",
+    "implementation",
+    "code-review",
+    "handoff"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Groffdev Codex Plugin",
+    "shortDescription": "Research, plan, grill, implement, review, and hand off with Codex.",
+    "longDescription": "A Codex-native workflow plugin. It stores research, plans, execution packets, reviews, and handoffs under thoughts/ and delegates implementation or review to fresh Codex CLI instances.",
+    "developerName": "Matt Groff",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Execute"
+    ],
+    "websiteURL": "https://github.com/mattlgroff/groffdev-codex-plugin",
+    "defaultPrompt": [
+      "Use research-codebase to document how this repo works.",
+      "Use create-plan and grill-me to produce a stress-tested implementation plan.",
+      "Use implement-plan to execute the approved plan with fresh Codex CLI instances."
+    ],
+    "brandColor": "#10A37F"
+  }
+}
