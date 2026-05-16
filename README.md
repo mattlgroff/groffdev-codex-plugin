@@ -126,6 +126,8 @@ codex exec -m gpt-5.5 \
 
 The installed Codex CLI exposes `-m, --model <MODEL>` directly. Reasoning effort and fast mode are config overrides, so this plugin passes them with `-c`.
 
+As of May 15, 2026, this plugin defaults code execution packets to `gpt-5.5` with `model_reasoning_effort="low"` and `service_tier="fast"`. In Matt's experience, that is the best default for coding packets that start with fresh, self-contained context.
+
 ## Repo-Scoped Sharing
 
 If you want a project repository to advertise this plugin to everyone working in that repo, add a marketplace file to that project at:
