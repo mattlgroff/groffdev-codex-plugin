@@ -1,11 +1,11 @@
 {
-  "name": "groffdev-codex-plugin-marketplace",
+  "name": "groffdev",
   "interface": {
-    "displayName": "Groffdev Codex Plugins"
+    "displayName": "Groffdev"
   },
   "plugins": [
     {
-      "name": "groffdev-codex-plugin",
+      "name": "groffdev",
       "source": {
         "source": "local",
         "path": "./"

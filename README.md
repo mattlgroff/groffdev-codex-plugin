@@ -44,7 +44,7 @@ Run this on the computer where you use Codex:
 codex plugin marketplace add mattlgroff/groffdev-codex-plugin
 ```
 
-Then restart Codex, open the plugin directory, choose "Groffdev Codex Plugins", and install `groffdev-codex-plugin`.
+Then restart Codex, open the plugin directory, choose "Groffdev", and install `groffdev`.
 
 ### What This Command Does
 
@@ -56,7 +56,7 @@ Conceptually, Codex:
 
 1. Fetches or records `github.com/mattlgroff/groffdev-codex-plugin` as a marketplace source.
 2. Reads `.agents/plugins/marketplace.json`.
-3. Finds the `groffdev-codex-plugin` entry.
+3. Finds the `groffdev` entry.
 4. Lets you install and enable that plugin in your local Codex environment.
 
 Other people install it the same way on their own computers:
@@ -80,7 +80,7 @@ This also registers a marketplace source for your local Codex installation, but 
 For users who installed the GitHub marketplace, update marketplace sources with:
 
 ```bash
-codex plugin marketplace upgrade groffdev-codex-plugin-marketplace
+codex plugin marketplace upgrade groffdev
 ```
 
 You can also refresh all configured marketplaces:
@@ -89,14 +89,14 @@ You can also refresh all configured marketplaces:
 codex plugin marketplace upgrade
 ```
 
-Then restart Codex. If the plugin directory shows an available update for `groffdev-codex-plugin`, install or update it there.
+Then restart Codex. If the plugin directory shows an available update for `groffdev`, install or update it there.
 
 For local checkout development:
 
 ```bash
 cd /path/to/groffdev-codex-plugin
 git pull
-codex plugin marketplace upgrade groffdev-codex-plugin-marketplace
+codex plugin marketplace upgrade groffdev
 ```
 
 Then restart Codex so it reloads the installed plugin copy.
