@@ -1,13 +1,11 @@
 ---
 name: research-codebase
-description: Document the codebase as-is with cited references through Codex-native research and optional parallel sub-agents.
+description: Documents the codebase as-is with cited file references through Codex-native research and optional parallel sub-agents. Use when the user asks how code works, where functionality lives, or wants repository research.
 ---
 
 # Research Codebase
 
 Document and explain the repository as it exists today.
-
-Argument hint: `[research-question-or-topic]`.
 
 Do not suggest changes, critique implementation quality, or perform root cause analysis unless the user explicitly asks for that. Describe what exists, where it exists, how it works, and how components interact.
 

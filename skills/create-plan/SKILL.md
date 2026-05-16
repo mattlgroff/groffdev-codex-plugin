@@ -1,13 +1,11 @@
 ---
 name: create-plan
-description: Create a detailed implementation plan through codebase research, user alignment, and optional grill-me stress testing.
+description: Creates detailed implementation plans through codebase research, user alignment, and optional grill-me stress testing. Use when the user wants a plan, technical spec, implementation outline, or ticket-to-plan workflow.
 ---
 
 # Create Plan
 
 Create a complete, actionable implementation plan under `thoughts/plans/`.
-
-Argument hint: `[ticket-or-context]`.
 
 Be skeptical and codebase-grounded. Read referenced files fully, research actual project patterns, ask only questions that investigation cannot answer, and do not finalize a plan with unresolved decisions.
 

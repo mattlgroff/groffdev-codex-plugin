@@ -1,13 +1,11 @@
 ---
 name: review-work
-description: Send completed work to a fresh Codex CLI instance for independent review, triage feedback, and delegate accepted fixes.
+description: Sends completed work to a fresh Codex CLI instance for independent review, triages findings, and delegates accepted fixes. Use when the user wants code review, review loops, or post-implementation quality checks.
 ---
 
 # Review Work
 
 Run an independent review loop for the current work.
-
-Argument hint: `[description-of-work]`.
 
 ## Workflow
 

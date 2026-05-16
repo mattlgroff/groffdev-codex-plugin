@@ -1,13 +1,11 @@
 ---
 name: implement-plan
-description: Execute an approved plan by writing self-contained packets and running fresh Codex CLI instances for each implementation slice.
+description: Executes an approved implementation plan by writing self-contained packets and running fresh Codex CLI instances for each slice. Use when the user wants to implement a thoughts/plans document or continue packet-based execution.
 ---
 
 # Implement Plan
 
 You are the orchestrator. Generate execution packets, run fresh Codex CLI instances, review their reports, update the plan, and continue until the plan is complete or blocked.
-
-Argument hint: `[plan-path]`.
 
 ## Critical Rules
 

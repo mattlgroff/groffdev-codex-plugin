@@ -1,13 +1,11 @@
 ---
 name: handoff
-description: Compact the current conversation into a handoff document for another Codex agent to pick up, saved under thoughts/handoffs.
+description: Writes a concise handoff document for another Codex agent, saved under thoughts/handoffs. Use when the user asks to hand off, compact context, preserve session state, or prepare the next session.
 ---
 
 # Handoff
 
 Write a concise handoff document so a fresh Codex agent can continue the work.
-
-Argument hint: what the next session will be used for.
 
 Save the document under `thoughts/handoffs/`. Create the directory if needed. Use a filename in this shape:
 

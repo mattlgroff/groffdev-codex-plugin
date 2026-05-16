@@ -1,13 +1,11 @@
 ---
 name: address-pr-comments
-description: Triage GitHub PR review comments, align with the user, then delegate approved fixes to fresh Codex CLI instances one packet per comment.
+description: Triages GitHub PR review comments, aligns verdicts with the user, and delegates approved fixes to fresh Codex CLI instances one packet per comment. Use when the user asks to address PR comments, review feedback, or requested changes.
 ---
 
 # Address PR Comments
 
 Triage and address review comments on an existing GitHub pull request.
-
-Argument hint: `[pr-number-or-url-or-branch]`.
 
 ## Rules
 
