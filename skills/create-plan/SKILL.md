@@ -70,4 +70,7 @@ Be skeptical and codebase-grounded. Read referenced files fully, research actual
 - `thoughts/research/...`
 ````
 
-When finalized, suggest `implement-plan` with the plan path.
+When finalized:
+
+- Suggest `implement-plan` with the plan path.
+- Suggest `handoff` if implementation will happen in a fresh session or the context is getting long.

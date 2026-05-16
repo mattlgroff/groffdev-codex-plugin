@@ -14,6 +14,28 @@ A Codex plugin for a research, planning, implementation, review, PR-comment, gri
 | `address-pr-comments` | Triages PR comments and fixes approved items one packet per comment |
 | `handoff` | Writes continuation notes to `thoughts/handoffs/` |
 
+## Recommended Workflow
+
+Use the skills in this order for normal feature work:
+
+```text
+research-codebase -> create-plan -> grill-me -> implement-plan -> review-work
+```
+
+Then use `address-pr-comments` after a pull request has review feedback.
+
+Use `handoff` whenever a session is ending, the context is getting long, or another Codex session should continue the work. It is not a replacement for research, plans, packets, or reviews; it should reference those artifacts instead of duplicating them.
+
+### How The Skills Connect
+
+1. `research-codebase` documents how the repository works today and saves findings in `thoughts/research/`.
+2. `create-plan` reads relevant research and code, optionally runs the `grill-me` decision loop, and writes an implementation plan in `thoughts/plans/`.
+3. `grill-me` stress-tests unclear plan or design decisions one question at a time. It can be used standalone or during `create-plan`.
+4. `implement-plan` reads a plan, writes execution packets to `thoughts/packets/`, and runs fresh Codex CLI instances for each implementation slice.
+5. `review-work` sends completed work to a fresh Codex reviewer and delegates accepted fixes.
+6. `address-pr-comments` handles GitHub PR review comments after a PR exists.
+7. `handoff` captures the current state for the next session and should point to the relevant `thoughts/` artifacts.
+
 ## Install From GitHub
 
 Run this on the computer where you use Codex:

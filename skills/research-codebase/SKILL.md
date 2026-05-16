@@ -68,4 +68,7 @@ last_updated: [YYYY-MM-DD]
 
 For follow-ups, append to the same research document and update `last_updated`.
 
-When complete, suggest using `create-plan` to turn the findings into an implementation plan if the user is moving toward a change.
+When complete:
+
+- Suggest `create-plan` if the user is moving toward a code change.
+- Suggest `handoff` if the session is ending, context is getting long, or another Codex session should continue from the research.
