@@ -75,6 +75,44 @@ codex plugin marketplace add ./.
 
 This also registers a marketplace source for your local Codex installation, but it points at the folder on disk instead of GitHub. It is useful while developing the plugin.
 
+## Updating The Plugin
+
+For users who installed the GitHub marketplace, update marketplace sources with:
+
+```bash
+codex plugin marketplace upgrade groffdev-codex-plugin-marketplace
+```
+
+You can also refresh all configured marketplaces:
+
+```bash
+codex plugin marketplace upgrade
+```
+
+Then restart Codex. If the plugin directory shows an available update for `groffdev-codex-plugin`, install or update it there.
+
+For local checkout development:
+
+```bash
+cd /path/to/groffdev-codex-plugin
+git pull
+codex plugin marketplace upgrade groffdev-codex-plugin-marketplace
+```
+
+Then restart Codex so it reloads the installed plugin copy.
+
+### Versioning
+
+Increment `.codex-plugin/plugin.json` version when plugin behavior changes, including skill instructions, hooks, bundled apps, or MCP config.
+
+Suggested versioning:
+
+- Patch, such as `0.1.1`: wording fixes, skill behavior refinements, small hook fixes.
+- Minor, such as `0.2.0`: new skills, renamed workflows, meaningful behavior changes.
+- Major, such as `1.0.0` to `2.0.0`: breaking changes to skill names, artifact paths, or expected workflow.
+
+README-only changes do not require a version bump unless the documented behavior depends on changed plugin files.
+
 ## Repo-Scoped Sharing
 
 If you want a project repository to advertise this plugin to everyone working in that repo, add a marketplace file to that project at:

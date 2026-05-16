@@ -1,6 +1,6 @@
 {
   "name": "groffdev-codex-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Groffdev Codex workflow plugin: research, plan, grill, implement, review, address PR comments, and hand off through nested Codex CLI workflows.",
   "author": {
     "name": "Matt Groff",
